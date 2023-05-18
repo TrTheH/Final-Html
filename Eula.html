@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fe26a5543.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>TheHoc</title>
+</head>
+<style>
+#container{
+    position: relative;
+    margin: 0px auto;
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    background: #1c1f46;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+#container h1{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer {
+    position:relative;
+    width: 100%;
+    background-color: #4f7ea0;
+    height:auto;
+    padding:5px;
+    bottom: 0;
+    justify-content: center;
+    justify-content: space-between; 
+}
+#info-head{
+    display: flex;
+    justify-content: space-between;
+}
+#img-charater{
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    align-content: center;
+    border-radius: 20px;
+    background-color: #303b7a;
+}
+#img-charater img{
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+#img-charater img:hover{
+    transform: scale(1.025);
+}
+#infor-charater{
+    box-sizing: border-box;
+    width: 49%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a;
+}
+#infor-charater table tr td{
+    font-size: 25px;
+    color:aliceblue;
+}
+.infor-avai{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+#weapon a p{
+    position: relative;
+    color: black;
+    border-radius: 5px;
+    background-color: #4f5496; 
+    width: 230%;
+    display: flex;
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+a {
+    text-decoration: none;
+}
+#artifact a p{ 
+    color: black;
+    border-radius: 5px;
+    background-color: #4f5496; 
+    width: 300%;
+    display: flex;
+    color: aliceblue;
+}
+#artifact{
+    position: absolute;
+    left: 50%;
+}
+#stats{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+#infor {
+    display: flex;
+    justify-content: space-between;
+}
+#infor p{
+    display: block;
+    background-color: #4f5496;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    text-align:center;
+}
+#infor2 {
+    display: block;
+    background-color: #4f5496;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    text-align:center;
+}
+.Normal{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+.Normal table tr td{
+    padding: 30px;
+    
+} 
+.Normal iframe{
+    width: 100%;
+    height: 520px;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <div id="header">
+        <nav id="head">
+            <a href="Main.html" id="logo"><img src="image/logo.png"></a>
+            <ul id="head-content" >
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="Charaters.html">Charaters</a></li>
+                <li><a href="Weapons.html">Weapons</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li><a href="#">Database</a>
+                    <ul id="Database-content">
+                        <li><a href="Artifacts.html">Artifacts</a></li>
+                        <li><a href="Element.html">Element</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div id="container">
+        <h1>Name: Eula</h1>
+        <br>
+        <div id="info-head">
+            <div id="img-charater">
+                <img src="image/Eula-card.png">
+            </div>
+            <div id="infor-charater">
+                <table style="width: 100%; height:100%; padding: 20px;">
+                    <tr>
+                        <td>Age/Birthday:</td>
+                        <td>October 25th</td>
+                    </tr>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td>Eula Lawrence</td>
+                    </tr>
+                    <tr>
+                        <td>Nation:</td>
+                        <td>Mondstadt</td>
+                    </tr>
+                    <tr>
+                        <td>Sex:</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>Rarity:</td>
+                        <td><img src="image/Genshin_5_Stars.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Weapon:</td>
+                        <td>Claymore</td>
+                    </tr>
+                    <tr>
+                        <td>Element:</td>
+                        <td>Cryo</td>
+                    </tr>
+                    <tr>
+                        <td>Constellation:</td>
+                        <td>Aphros Delos</td>
+                    </tr>
+                    <tr>
+                        <td>Special Dish:</td>
+                        <td>Stormcrest Pie</td>
+                    </tr>
+                    <tr>
+                        <td>Release Date:</td>
+                        <td>May 18, 2021</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="infor-avai">
+            <div id="weapon">
+                <p style="color: #ffd780;">Eula Best Weapons</p>
+                <br>
+                <a href="Song.html"><p><img src="image/Song_of_Broken_Pines.png"> &nbsp; Song of Broken Pines</p></a>
+            </div>
+            <div id="artifact">
+                <p style="color: #ffd780;">Eula Best Artifacts</p>
+                <br>
+                <a href="Artifacts.html"><p><img src="image/pale_flame.png"> &nbsp; Pale_flame</p></a>
+            </div>
+        </div>
+        <br>
+        <div id="stats">
+            <p style="color: #ffd780;">Eula Best Stats</p>
+            <br>
+            <div id="infor">
+                <p>Sands: ATK%</p>
+                <p>Goblet: Physical DMG</p>
+                <p>Circlet: CRIT Rate / CRIT DMG</p>
+            </div>
+            <br>
+            <div id="infor2">
+                <p><b>Substats</b>: CRIT Rate / CRIT DMG > Energy Recharge > ATK%</p>
+            </div>
+        </div>
+        <br>
+        <div id="talent">
+            <h2 style="color: aliceblue;">Eula Talents</h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/UI_GachaTypeIcon_Claymore-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Normal Attack</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Favonius Bladework - Edel</h3>
+                            <br>
+                            <p style="color: #ffd780;">Normal Attack</p>
+                            <br>
+                            <p>Perform up to five consecutive strikes.</p>
+                            <br>
+                            <p style="color: #ffd780;">Charged Attack</p>
+                            <br>
+                            <p>Drains Stamina over time to perform continuous slashes. At the end of the sequence, perform a more powerful slash.</p>
+                            <br>
+                            <p style="color: #ffd780;">Plunging Attack</p>
+                            <br>
+                            <p>Plunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_2-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Elemental Skill</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Icetide Vortex</h3>
+                            <br>
+                            <p style="color: #ffd780;">Press</p>
+                            <br>
+                            <p>Slashes swiftly, dealing Cryo DMG. When it hits an opponent, Eula gains a stack of Grimheart that stacks up to two times. These stats can only be gained once every 0.3s.</p>
+                            <br>
+                            <p style="color: #ffd780;">Grimheart</p>
+                            <br>
+                            <p>Increases Eula's resistance to interruption and DEF.</p>
+                            <br>
+                            <p style="color: #ffd780;">Hold</p>
+                            <br>
+                            <p>Wielding her sword, Eula consumes all the stacks of Grimheart and lashes forward, dealing AoE Cryo DMG to opponents in front of her.</p>
+                            <br>
+                            <p>If Grimheart stacks are consumed, surrounding opponents will have their Physical RES and Cryo RES decreased.</p>
+                            <br>
+                            <p>Each consumed stack of Grimheart will be converted into an Icewhirl Brand that deals Cryo DMG to nearby opponents.</p>                           
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_3-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Elemental Burst</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Glacial Illumination</h3>
+                            <br>
+                            <p>Brandishes her greatsword, dealing Cryo DMG to nearby opponents and creating a Lightfall Sword that follows her around for a duration of up to 7s.</p>
+                            <br>
+                            <p>While present, the Lightfall Sword increases Eula's resistance to interruption. When Eula's own Normal Attack, Elemental Skill, and Elemental Burst deal DMG to opponents, they will charge the Lightfall Sword, which can gain an energy stack once every 0.1s.</p>
+                            <br>
+                            <p>Once its duration ends, the Lightfall Sword will descend and explode violently, dealing Physical DMG to nearby opponents.</p>
+                            <br>
+                            <p>This DMG scales on the number of energy stacks the Lightfall Sword has accumulated. If Eula leaves the field, the Lightfall Sword will immediately explode.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Passives">
+            <h2 style="color: aliceblue;">Eula Passives </h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_4-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Ascension 1</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Roiling Rime</h3>
+                            <br>
+                            <p>If 2 stacks of Grimheart are consumed upon unleashing the Holding Mode of Icetide Vortex, a Shattered Lightfall Sword will be created that will explode immediately, dealing 50% of the basic Physical DMG dealt by a Lightfall Sword created by Glacial Illumination.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_5-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Ascension 4</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Wellspring of War-Lust</h3>
+                            <br>
+                            <p>When Glacial Illumination is cast, the CD of Icetide Vortex is reset and Eula gains 1 stack of Grimheart.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_6-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Passive</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Aristocratic Introspection</h3>
+                            <br>
+                            <p>When Eula crafts Character Talent Materials, she has a 10% chance to receive double the product.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Constellations">
+            <h2 style="color: aliceblue;">Eula Constellations</h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_1-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 1</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Tidal Illusion</h3>
+                            <br>
+                            <p>Every time Icetide Vortex's Grimheart stacks are consumed, Eula's Physical DMG is increased by 30% for 6s.</p>
+                            <br>
+                            <p>Each stack consumed will increase the duration of this effect by 6s up to a maximum of 18s.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_2-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 2</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Lady of Seafoam</h3>
+                            <br>
+                            <p>Decreases the CD of Icetide Vortex's Holding Mode, rendering it identical to Tapping CD.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_3-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 3</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Lawrence Pedigree</h3>
+                            <br>
+                            <p>Increases the Level of Glacial Illumination by 3.</p>
+                            <br>
+                            <p>Maximum upgrade level is 15.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_4-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 4</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">The Obstinacy of One's Inferiors</h3>
+                            <br>
+                            <p>Lightfall Swords deal 25% increased DMG against opponents with less than 50% HP.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_5-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 5</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Chivalric Quality</h3>
+                            <br>
+                            <p>Increases the Level of Icetide Vortex by 3.</p>
+                            <br>
+                            <p>Maximum upgrade level is 15.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_6-eula.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 6</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Noble Obligation</h3>
+                            <br>
+                            <p>Lightfall Swords created by Glacial Illumination start with 5 stacks of energy. Normal Attacks, Elemental Skills, and Elemental Bursts have a 50% chance to grant the Lightning Sword an additional stack of energy.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Showcase">
+            <h2 style="color: aliceblue;">Eula Showcase</h2>
+            <br>
+            <div class="Normal">
+                <p>Eula video guide by <a href="https://www.youtube.com/Braxophone"  style="color: aqua;">Braxophone. Check out his content!</a></p><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6L41Yfo0450" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">          
+            <div id="logo">           
+                <a href="Main.html"><img src="image/logo.png"></a><br> <p>TheHoc.com is not affiliated with or endorsed by miHoYo. <br>
+                    TheHoc.com is a Database and Tier List website for</p>
+                    <br>
+                    <p class="footer-copyright">© TheHoc.com 2023</p>
+            </div>       
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

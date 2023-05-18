@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fe26a5543.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>TheHoc</title>
+</head>
+<style>
+#container{
+    position: relative;
+    margin: 0px auto;
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    background: #1c1f46;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+#container h1{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer {
+    position:relative;
+    width: 100%;
+    background-color: #4f7ea0;
+    height:auto;
+    padding:5px;
+    bottom: 0;
+    justify-content: center;
+    justify-content: space-between; 
+}
+#info-head{
+    display: flex;
+    justify-content: space-between;
+}
+#img-charater{
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    align-content: center;
+    border-radius: 20px;
+    background-color: #303b7a;
+}
+#img-charater img{
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+#img-charater img:hover{
+    transform: scale(1.025);
+}
+#infor-charater{
+    box-sizing: border-box;
+    width: 49%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a;
+}
+#infor-charater table tr td{
+    font-size: 25px;
+    color:aliceblue;
+}
+.infor-avai{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+#weapon a p{
+    position: relative;
+    color: black;
+    border-radius: 5px;
+    background-color: #4f5496; 
+    width: 250%;
+    display: flex;
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+a {
+    text-decoration: none;
+}
+#artifact a p{ 
+    color: black;
+    border-radius: 5px;
+    background-color: #4f5496; 
+    width: 200%;
+    display: flex;
+    color: aliceblue;
+}
+#artifact{
+    position: absolute;
+    left: 50%;
+}
+#stats{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+#infor {
+    display: flex;
+    justify-content: space-between;
+}
+#infor p{
+    display: block;
+    background-color: #4f5496;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    text-align:center;
+}
+#infor2 {
+    display: block;
+    background-color: #4f5496;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    text-align:center;
+}
+.Normal{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+.Normal table tr td{
+    padding: 30px;
+    
+} 
+.Normal iframe{
+    width: 100%;
+    height: 520px;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <div id="header">
+        <nav id="head">
+            <a href="Main.html" id="logo"><img src="image/logo.png"></a>
+            <ul id="head-content" >
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="Charaters.html">Charaters</a></li>
+                <li><a href="Weapons.html">Weapons</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li><a href="#">Database</a>
+                    <ul id="Database-content">
+                        <li><a href="Artifacts.html">Artifacts</a></li>
+                        <li><a href="Element.html">Element</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div id="container">
+        <h1>Name: Zhongli</h1>
+        <br>
+        <div id="info-head">
+            <div id="img-charater">
+                <img src="image/Zhongli_Card.jpg">
+            </div>
+            <div id="infor-charater">
+                <table style="width: 100%; height:100%; padding: 20px;">
+                    <tr>
+                        <td>Age/Birthday:</td>
+                        <td>December 31st</td>
+                    </tr>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td>Zhongli</td>
+                    </tr>
+                    <tr>
+                        <td>Nation:</td>
+                        <td>Liyue</td>
+                    </tr>
+                    <tr>
+                        <td>Sex:</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Rarity:</td>
+                        <td><img src="image/Genshin_5_Stars.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Weapon:</td>
+                        <td>Polearm</td>
+                    </tr>
+                    <tr>
+                        <td>Element:</td>
+                        <td>Geo</td>
+                    </tr>
+                    <tr>
+                        <td>Constellation:</td>
+                        <td>Lapis Dei</td>
+                    </tr>
+                    <tr>
+                        <td>Special Dish:</td>
+                        <td>Slow-Cooked Bamboo Shoot Soup</td>
+                    </tr>
+                    <tr>
+                        <td>Release Date:</td>
+                        <td>December 01, 2020</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="infor-avai">
+            <div id="weapon">
+                <p style="color: #ffd780;">Zhongli Best Weapons</p>
+                <br>
+                <a href="Vortex.html"><p><img src="image/vortex_vanquisher.png"> Thundering Pulse</p></a>
+            </div>
+            <div id="artifact">
+                <p style="color: #ffd780;">Zhongli Best Artifacts</p>
+                <br>
+                <a href="Artifacts.html"><p><img src="image/tenacity_of_the_millelith.png"> Tenacity of the Millelith</p></a>
+            </div>
+        </div>
+        <br>
+        <div id="stats">
+            <p style="color: #ffd780;">Zhongli Best Stats</p>
+            <br>
+            <div id="infor">
+                <p>Sands: HP%</p>
+                <p>Goblet: HP%</p>
+                <p>Circlet: HP%</p>
+            </div>
+            <br>
+            <div id="infor2">
+                <p><b>Substats</b>: HP% > HP > Energy Recharge</p>
+            </div>
+        </div>
+        <br>
+        <div id="talent">
+            <h2 style="color: aliceblue;">Zhongli Talents</h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/Normal-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Normal Attack</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Rain of Stone</h3>
+                            <br>
+                            <p style="color: #ffd780;">Normal Attack</p>
+                            <br>
+                            <p>Performs up to 6 consecutive spear strikes</p>
+                            <br>
+                            <p style="color: #ffd780;">Charged Attack</p>
+                            <br>
+                            <p>Consumes a certain amount of Stamina to lunge forward, causing stone spears to fall along his path.</p>
+                            <br>
+                            <p style="color: #ffd780;">Plunging Attack</p>
+                            <br>
+                            <p>Plunges from mid-air to strike the ground below, damaging enemies along the path and dealing AoE DMG upon impact.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_2-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Elemental Skill</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Dominus Lapidis</h3>
+                            <br>
+                            <p style="color: #ffd780;">Press</p>
+                            <br>
+                            <p>Commands the omnipresent power of the earth to solidify into a Stone Stele, standing 30 seconds, dealing AoE Geo DMG at the creation.</p>
+                            <br>
+                            <p style="color: #ffd780;">Hold</p>
+                            <br>
+                            <p>Causes nearby Geo energy to explode, causing the following effects:</p><br>
+                            <p>- If their maximum number hasn't been reached, creates a Stone Stele.</p><br>
+                            <p>- Creates a shield of jade. The shield's DMG Absorption scales based on Zhongli's Max HP. Possesses 150% DMG Absorption against all Elemental and Physical DMG.</p><br>
+                            <p>- Deals AoE Geo DMG.</p><br>
+                            <p>- If there are nearby targets with the Geo element, it will drain a large amount of Geo element from a maximum of 2 such targets. This effect does not cause DMG.</p>
+                            <br>
+                            <p style="color: #ffd780;">Stone Stele:</p>
+                            <br>
+                            <p>When created, deals AoE Geo DMG. Additionally, every 2 seconds, it will resonate with other nearby Geo Constructs, dealing Geo DMG to surrounding opponents. Stele creation and Resonance generate 0.5 elemental particles.
+                                The Stone Stele is considered a Geo Construct that can both be climbed and used to block attacks.
+                                Only one Stele created by Zhongli himself may initially exist at any one time.</p>
+                            <br>
+                            <p style="color: #ffd780;">Jade Shield</p>
+                            <br>
+                            <p>Possesses 150% DMG Absorption against all Elemental and Physical DMG.<br>
+                                Characters protected by the Jade Shield will decrease the Elemental RES and Physical RES of opponents in a small AoE by 20%. This effect cannot be stacked.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_3-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Elemental Burst</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Planet Befall</h3>
+                            <br>
+                            <p>Brings a falling meteor down to earth, dealing massive Geo DMG to opponents caught in its AoE and applying the Petrification status to them.</p>
+                            <br>
+                            <p style="color: #ffd780;">Petrification</p>
+                            <br>
+                            <p>Opponents affected by the Petrification status cannot move.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Passives">
+            <h2 style="color: aliceblue;">Zhongli Passives </h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_4-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Ascension 1</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Resonant Waves</h3>
+                            <br>
+                            <p>When the Jade Shield takes DMG, it will Fortify:</p>
+                            <br>
+                            <p>- Fortified characters have 5% increased Shield Strength.</p>
+                            <br>
+                            <p>Can stack up to 5 times, and lasts until the Jade Shield dissapears.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_5-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Ascension 4</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Dominance of Earth</h3>
+                            <br>
+                            <p>Zhongli deals bonus DMG based on his Max HP:</p>
+                            <br>
+                            <p>- Normal Attack, Charged Attack, and Plunging Attack DMG is increased by 1.39% of Max HP.</p>
+                            <br>
+                            <p>- Dominus Lapidis Stone Stele, resonance, and hold DMG is increased by 1.9% of Max HP.</p>
+                            <br>
+                            <p>- Planet Befall deals additional DMG equal to 33% of Zhongli's Max HP.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_6-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Passive</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Arcanum of Crystal</h3>
+                            <br>
+                            <p>Refunds 15% of the ores used when crafting Polearm-type weapons.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Constellations">
+            <h2 style="color: aliceblue;">Zhongli Constellations</h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_1-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 1</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Rock, the Backbone of Earth</h3>
+                            <br>
+                            <p>Increases the maximum number of Stone Steles created by Dominus Lapidis that may exist simultaneously to 2.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_2-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 2</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Stone, the Cradle of Jade</h3>
+                            <br>
+                            <p>Planet Befall grants nearby characters on the field a Jade Shield when it descends.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_3-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 3</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Jade, Shimmering through Darkness</h3>
+                            <br>
+                            <p>Increases the Level of Dominus Lapidis by 3.</p>
+                            <br>
+                            <p>Maximum upgrade level is 15.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_4-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 4</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Topaz, Unbreakable and Fearless</h3>
+                            <br>
+                            <p>Increases Planet Befall's AoE by 20% and increases the duration of Planet Befall's Petrification effect by 2s.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_5-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 5</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Lazuli, Herald of the Order</h3>
+                            <br>
+                            <p>Increase the Level of Planet Befall by 3.</p>
+                            <br>
+                            <p>Maximum upgrade level is 15.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_6-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 6</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Chrysos, Bounty of Dominator</h3>
+                            <br>
+                            <p>When the Jade Shield takes DMG, 40% of that incoming DMG is converted to HP for the current character. A single instance of regeneration cannot exceed 8% of that character's Max HP.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Showcase">
+            <h2 style="color: aliceblue;">Zhongli Showcase</h2>
+            <br>
+            <div class="Normal">
+                <p>Zhongli video guide by <a href="https://www.youtube.com/@Zy0x"  style="color: aqua;">Zy0x. Check out his content!</a></p><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pCESvIh4W5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">          
+            <div id="logo">           
+                <a href="Main.html"><img src="image/logo.png"></a><br> <p>TheHoc.com is not affiliated with or endorsed by miHoYo. <br>
+                    TheHoc.com is a Database and Tier List website for</p>
+                    <br>
+                    <p class="footer-copyright">© TheHoc.com 2023</p>
+            </div>       
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

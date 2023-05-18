@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fe26a5543.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>TheHoc</title>
+</head>
+<style>
+#container{
+    position: relative;
+    margin: 0px auto;
+    width: 1000px;
+    height: 800px;
+    box-sizing: border-box;
+    background: #1c1f46;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+#container h1{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer {
+    position:absolute;
+    width: 100%;
+    background-color: #4f7ea0;
+    height:auto;
+    padding:5px;
+    bottom: 0;
+    justify-content: center;
+    justify-content: space-between; 
+}
+#container-head{
+    display: flex;
+    justify-content: space-between;
+}
+#input_filter{
+    display: flex;
+    min-width: 300px;
+    line-height: 1em;
+    min-height: 40px;
+    margin: 0 0 0 20px;
+    border-radius: 4px;
+    background: #303b7a;
+}
+#icon {
+    position: relative;
+    background-color: #1c205b;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+#icon i{
+    position: absolute;
+    top:20px;
+    left: 8px;
+}
+#input_filter input{
+    background-color:#303b7a;
+    flex-grow: 1;
+    height: 100%;
+    color: #dbddef;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    transition: background-color 0.5s ease-in;
+}
+#input_filter input:hover{
+    background-color: #434f92;
+}
+#search-close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+}
+#filter_botton {
+    padding: 5px;
+}
+#filter_botton a img{
+    transition: all 0.4s ease;
+}    
+#filter_botton a img:hover {
+    transform: scale(1.2);
+}
+.active{
+    background-color: #8a8dba!important;
+}
+#filter_data{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #303b7a;
+}
+.element_charater{
+    display: block;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    padding: 15px;
+    transition: all 0.4s ease ;
+}
+.element_charater:hover{
+    transform: scale(1.2);
+}
+.element_charater a{
+    text-decoration: none;
+}
+.infor h3{
+    color: #000000;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;  
+    transition: color .3s;
+}
+</style>
+<body>
+    <div id="header">
+        <nav id="head">
+            <a href="Main.html" id="logo"><img src="image/logo.png"></a>
+            <ul id="head-content" >
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="Charaters.html">Charaters</a></li>
+                <li><a href="Weapons.html">Weapons</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li><a href="#">Database</a>
+                    <ul id="Database-content">
+                        <li><a href="Artifacts.html">Artifacts</a></li>
+                        <li><a href="Element.html">Element</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div id="container">
+        <div id="container-head">
+            <h1>
+                Genshin Impact Characters List
+            </h1>
+            <form action="" id="input_filter">
+                <div id="icon"><i class="fa-solid fa-magnifying-glass fa-xl"></i></div>
+                <input type="text" placeholder="Search for a character..." id="search-item" autocomplete="off">
+                <div id="search-close"><i class="fa-solid fa-xmark"></i></div>
+            </form>
+        </div>
+        <br>
+        <section id="filter">
+            <div id="filter_button">
+                <a class="btn btn-primary active" data-filter="all"><img src="image/cropped-site-icon.png"></a>
+                <a class="btn btn-primary" data-filter="Anemo"><img src="image/element_anemo.png"></a>
+                <a class="btn btn-primary" data-filter="Cryo"><img src="image/element_cryo.png"></a>
+                <a class="btn btn-primary" data-filter="Electro"><img src="image/element_electro.png"></a>
+                <a class="btn btn-primary" data-filter="Dendro"><img src="image/element_dendro.png"></a>
+                <a class="btn btn-primary" data-filter="Geo"><img src="image/Element_Geo.png"></a>
+                <a class="btn btn-primary" data-filter="Hydro"><img src="image/element_hydro.png"></a>
+                <a class="btn btn-primary" data-filter="Pyro"><img src="image/element_pyro.png"></a>
+            </div>
+            <br>
+            <div id="filter_data">
+                <div class="element_charater" data-item="Geo">
+                    <a href="Zhongli.html">
+                        <img src="image/Zhongli.png" alt="Zhongli">
+                        <div class="infor">  
+                            <h3 class="name_item">Zhongli</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="element_charater" data-item="Electro">
+                    <a href="Raiden.html">
+                        <img src="image/Raiden.png" alt="Raiden">
+                        <div class="infor">  
+                            <h3 class="name_item">Raiden</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="element_charater" data-item="Hydro">
+                    <a href="Childe.html">
+                        <img src="image/Childe.png" alt="Childe">
+                        <div class="infor">  
+                            <h3 class="name_item">Childe</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="element_charater" data-item="Cryo">
+                    <a href="Eula.html">
+                        <img src="image/Eula.png" alt="Eula">
+                        <div class="infor">  
+                            <h3 class="name_item">Eula</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="element_charater" data-item="Anemo">
+                    <a href="Venti.html">
+                        <img src="image/Venti.png" alt="Venti">
+                        <div class="infor">  
+                            <h3 class="name_item">Venti</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="element_charater" data-item="Anemo">
+                    <a href="Kazuha.html">
+                        <img src="image/Kazuha.png" alt="Kazuha">
+                        <div class="infor">  
+                            <h3 class="name_item">Kazuha</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="element_charater" data-item="Dendro">
+                    <a href="Nahida.html">
+                        <img src="image/Nahida.png" alt="Nahida">
+                        <div class="infor">  
+                            <h3 class="name_item">Nahida</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="element_charater" data-item="Pyro">
+                    <a href="Yoimiya.html">
+                        <img src="image/Yoimiya.png" alt="Yoimiya">
+                        <div class="infor">  
+                            <h3 class="name_item">Yoimiya</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <script src="js/filter_js.js"></script>
+    </div>
+    <footer>
+        <div class="footer">          
+            <div id="logo">           
+                <a href="Main.html"><img src="image/logo.png"></a><br> <p>TheHoc.com is not affiliated with or endorsed by miHoYo. <br>
+                    TheHoc.com is a Database and Tier List website for</p>
+                    <br>
+                    <p class="footer-copyright">© TheHoc.com 2023</p>
+            </div>       
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fe26a5543.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>TheHoc</title>
+</head>
+<style>
+#container{
+    position: relative;
+    margin: 0px auto;
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    background: #1c1f46;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+#container h1{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer {
+    position:relative;
+    width: 100%;
+    background-color: #4f7ea0;
+    height:auto;
+    padding:5px;
+    bottom: 0;
+    justify-content: center;
+    justify-content: space-between; 
+}
+#info-head{
+    display: flex;
+    justify-content: space-between;
+}
+#img-charater{
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    align-content: center;
+    border-radius: 20px;
+    background-color: #303b7a;
+}
+#img-charater img{
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+#img-charater img:hover{
+    transform: scale(1.025);
+}
+#infor-charater{
+    box-sizing: border-box;
+    width: 49%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a;
+}
+#infor-charater table tr td{
+    font-size: 25px;
+    color:aliceblue;
+}
+.infor-avai{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+#weapon a p{
+    position: relative;
+    color: black;
+    border-radius: 5px;
+    background-color: #4f5496; 
+    width: 280%;
+    display: flex;
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+a {
+    text-decoration: none;
+}
+#artifact a p{ 
+    color: black;
+    border-radius: 5px;
+    background-color: #4f5496; 
+    width: 250%;
+    display: flex;
+    color: aliceblue;
+}
+#artifact{
+    position: absolute;
+    left: 50%;
+}
+#stats{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+#infor {
+    display: flex;
+    justify-content: space-between;
+}
+#infor p{
+    display: block;
+    background-color: #4f5496;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    text-align:center;
+}
+#infor2 {
+    display: block;
+    background-color: #4f5496;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    text-align:center;
+}
+.Normal{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+.Normal table tr td{
+    padding: 30px;
+    
+} 
+.Normal iframe{
+    width: 100%;
+    height: 520px;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <div id="header">
+        <nav id="head">
+            <a href="Main.html" id="logo"><img src="image/logo.png"></a>
+            <ul id="head-content" >
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="Charaters.html">Charaters</a></li>
+                <li><a href="Weapons.html">Weapons</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li><a href="#">Database</a>
+                    <ul id="Database-content">
+                        <li><a href="Artifacts.html">Artifacts</a></li>
+                        <li><a href="Element.html">Element</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div id="container">
+        <h1>Name: Kazuha</h1>
+        <br>
+        <div id="info-head">
+            <div id="img-charater">
+                <img src="image/Kazuha-card.png">
+            </div>
+            <div id="infor-charater">
+                <table style="width: 100%; height:100%; padding: 20px;">
+                    <tr>
+                        <td>Age/Birthday:</td>
+                        <td>October 29th</td>
+                    </tr>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td>Kaedehara Kazuha</td>
+                    </tr>
+                    <tr>
+                        <td>Nation:</td>
+                        <td>Inazuma</td>
+                    </tr>
+                    <tr>
+                        <td>Sex:</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Rarity:</td>
+                        <td><img src="image/Genshin_5_Stars.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Weapon:</td>
+                        <td>Sword</td>
+                    </tr>
+                    <tr>
+                        <td>Element:</td>
+                        <td>Anemo</td>
+                    </tr>
+                    <tr>
+                        <td>Constellation:</td>
+                        <td>Acer Palmatum</td>
+                    </tr>
+                    <tr>
+                        <td>Special Dish:</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>Release Date:</td>
+                        <td>June 29, 2021</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="infor-avai">
+            <div id="weapon">
+                <p style="color: #ffd780;">Kazuha Best Weapons</p>
+                <br>
+                <a href="Freedom.html"><p><img src="image/freedom-sworn.png"> &nbsp; freedom sworn</p></a>
+            </div>
+            <div id="artifact">
+                <p style="color: #ffd780;">Kazuha Best Artifacts</p>
+                <br>
+                <a href="Artifacts.html"><p><img src="image/viridescent_venerer.png"> &nbsp; Viridescent venerer</p></a>
+            </div>
+        </div>
+        <br>
+        <div id="stats">
+            <p style="color: #ffd780;">Kazuha Best Stats</p>
+            <br>
+            <div id="infor">
+                <p>Sands: Elemental Mastery</p>
+                <p>Goblet: Elemental Mastery</p>
+                <p>Circlet: Elemental Mastery</p>
+            </div>
+            <br>
+            <div id="infor2">
+                <p><b>Substats</b>: Elemental Mastery > Energy Recharge > ATK%</p>
+            </div>
+        </div>
+        <br>
+        <div id="talent">
+            <h2 style="color: aliceblue;">Kazuha Talents</h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/UI_GachaTypeIcon_Sword.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Normal Attack</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Garyuu Bladework</h3>
+                            <br>
+                            <p style="color: #ffd780;">Normal Attack</p>
+                            <br>
+                            <p>Performs up to 5 rapid strikes.</p>
+                            <br>
+                            <p style="color: #ffd780;">Charged Attack</p>
+                            <br>
+                            <p>Consumes a certain amount of Stamina to unleash 2 rapid sword strikes.</p>
+                            <br>
+                            <p style="color: #ffd780;">Plunging Attack</p>
+                            <br>
+                            <p>Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact. If this Plunging Attack is triggered by Chihayaburu, it will be converted to Plunging Attack: Midare Ranzan.</p>
+                            <br>
+                            <p style="color: #ffd780;">Plunging Attack: Midare Ranzan</p>
+                            <br>
+                            <p>When a Plunging Attack is performed using the effects of the Elemental Skill Chihayaburu, Plunging Attack DMG is converted to Anemo DMG and will create a small wind tunnel via a secret blade technique that pulls in nearby objects and opponents.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_2-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Elemental Skill</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Chihayaburu</h3>
+                            <br>
+                            <p>Unleashes a secret technique as fierce as the rushing wind that pulls objects and opponents towards Kazuha's current position before launching opponents within the AoE, dealing Anemo DMG and lifting Kazuha into the air on a rushing gust of wind.</p>
+                            <p style="color: #ffd780;">Press</p>
+                            <br>
+                            <p>Can be used in mid-air.</p>
+                            <br>
+                            <p style="color: #ffd780;">Hold</p>
+                            <br>
+                            <p>Charges up before unleashing greater Anemo DMG over a larger AoE than Press Mode.</p>
+                            <br>
+                            <p style="color: #ffd780;">Plunging Attack: Midare Ranzan</p>
+                            <br>
+                            <p>Within 10s of remaining airborne after casting Chihayaburu, Kazuha can unleash a powerful Plunging Attack known as Midare Ranzan.</p>
+                            <br>
+                            <p>When a Plunging Attack is performed using the effects of the Elemental Skill Chihayaburu, Plunging Attack DMG is converted to Anemo DMG. On landing, Kazuha creates a small wind tunnel via a secret blade technique that pulls in nearby objects and opponents. Midare Ranzan's DMG is considered Plunging Attack DMG.</p>                           
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_3-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Elemental Burst</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Kazuha Slash</h3>
+                            <br>
+                            <p>The signature technique of Kazuha's self-styled bladework — a single slash that strikes with the force of the first winds of autumn, dealing AoE Anemo DMG. The blade's passage will leave behind a field named "Autumn Whirlwind" that periodically deals AoE Anemo DMG to opponents within its range.</p>
+                            <br>
+                            <p style="color: #ffd780;">Elemental Absorption</p>
+                            <br>
+                            <p>If Autumn Whirlwind comes into contact with Hydro/Pyro/Cryo/Electro, it will deal additional elemental DMG of that type. Elemental Absorption may only occur once per use.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Passives">
+            <h2 style="color: aliceblue;">Kazuha Passives </h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_4-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Ascension 1</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Soumon Swordsmanship</h3>
+                            <br>
+                            <p>If Chihayaburu comes into contact with Hydro/Pyro/Cryo/Electro when cast, Chihayaburu will absorb that element and if Plunging Attack: Midare Ranzan is used before the effect expires, it will deal an additional 200% ATK of the absorbed elemental type as DMG. This will be considered Plunging Attack DMG.</p>
+                            <br>
+                            <p>Elemental Absorption may only occur once per use of Chihayaburu.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_5-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Ascension 4</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Poetics of Fuubutsu</h3>
+                            <br>
+                            <p>Upon triggering a Swirl reaction, Kaedehara Kazuha will grant teammates a 0.04% Elemental DMG Bonus to their corresponding Element for every point of Elemental Mastery he has for 8s. Bonuses for different elements obtained through this method can co-exist.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_6-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Passive</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Cloud Strider</h3>
+                            <br>
+                            <p>Decreases sprinting Stamina consumption for your own party members by 20%.
+                                Not stackable with Passive Talents that provide the exact same effects.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Constellations">
+            <h2 style="color: aliceblue;">Kazuha Constellations</h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_1-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 1</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Scarlet Hills</h3>
+                            <br>
+                            <p>Decreases Chihayaburu's CD by 10%</p>
+                            <br>
+                            <p>Using Kazuha Slash resets the CD of Chihayaburu.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_2-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 2</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Yamaarashi Tailwind</h3>
+                            <br>
+                            <p>The Autumn Whirlwind field created by Kazuha Slash has the following effects:</p>
+                            <br>
+                            <p>- Increases Kaedehara Kazuha's own Elemental Mastery by 200.</p>
+                            <br>
+                            <p>- Increases the Elemental Mastery of characters within the field by 200.</p>
+                            <br>
+                            <p>The Elemental Mastery-increasing effects of this Constellation do not stack.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_3-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 3</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Maple Monogatari</h3>
+                            <br>
+                            <p>Increases the Level of Chihayaburu by 3.</p>
+                            <br>
+                            <p>Maximum upgrade level is 15.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_4-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 4</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Oozora Genpou</h3>
+                            <br>
+                            <p>When Kaedehara Kazuha's Energy is lower than 45, he obtains the following effects:</p>
+                            <br>
+                            <p>- Pressing or Holding Chihayaburu regenerates 3 or 4 Energy for Kaedehara Kazuha, respectively.</p>
+                            <br>
+                            <p>- When gliding, Kaedehara Kazuha regenerates 2 Energy per second.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_5-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 5</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Wisdom of Bansei</h3>
+                            <br>
+                            <p>Increase the Level of Kazuha Slash by 3.</p>
+                            <br>
+                            <p>Maximum upgrade level is 15.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_6-kazuha.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 6</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Crimson Momiji</h3>
+                            <br>
+                            <p>After using Chihayaburu or Kazuha Slash, Kaedehara Kazuha gains an Anemo Infusion for 5s. Additionally, each point of Elemental Mastery will increase the DMG dealt by Kaedehara Kazuha's Normal, Charged, and Plunging Attack by 0.2%.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Showcase">
+            <h2 style="color: aliceblue;">Kazuha Showcase</h2>
+            <br>
+            <div class="Normal">
+                <p>Kazuha video guide by <a href="https://www.youtube.com/@Zy0x"  style="color: aqua;">Zy0x. Check out his content!</a></p><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kkxoO3ss2EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">          
+            <div id="logo">           
+                <a href="Main.html"><img src="image/logo.png"></a><br> <p>TheHoc.com is not affiliated with or endorsed by miHoYo. <br>
+                    TheHoc.com is a Database and Tier List website for</p>
+                    <br>
+                    <p class="footer-copyright">© TheHoc.com 2023</p>
+            </div>       
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

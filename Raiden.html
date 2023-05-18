@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fe26a5543.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>TheHoc</title>
+</head>
+<style>
+#container{
+    position: relative;
+    margin: 0px auto;
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    background: #1c1f46;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+#container h1{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer {
+    position:relative;
+    width: 100%;
+    background-color: #4f7ea0;
+    height:auto;
+    padding:5px;
+    bottom: 0;
+    justify-content: center;
+    justify-content: space-between; 
+}
+#info-head{
+    display: flex;
+    justify-content: space-between;
+}
+#img-charater{
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    align-content: center;
+    border-radius: 20px;
+    background-color: #303b7a;
+}
+#img-charater img{
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+#img-charater img:hover{
+    transform: scale(1.025);
+}
+#infor-charater{
+    box-sizing: border-box;
+    width: 49%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a;
+}
+#infor-charater table tr td{
+    font-size: 25px;
+    color:aliceblue;
+}
+.infor-avai{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+#weapon a p{
+    position: relative;
+    color: black;
+    border-radius: 5px;
+    background-color: #4f5496; 
+    width: 250%;
+    display: flex;
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+a {
+    text-decoration: none;
+}
+#artifact a p{ 
+    color: black;
+    border-radius: 5px;
+    background-color: #4f5496; 
+    width: 200%;
+    display: flex;
+    color: aliceblue;
+}
+#artifact{
+    position: absolute;
+    left: 50%;
+}
+#stats{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+#infor {
+    display: flex;
+    justify-content: space-between;
+}
+#infor p{
+    display: block;
+    background-color: #4f5496;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    text-align:center;
+}
+#infor2 {
+    display: block;
+    background-color: #4f5496;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    text-align:center;
+}
+.Normal{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+.Normal table tr td{
+    padding: 30px;
+    
+} 
+.Normal iframe{
+    width: 100%;
+    height: 520px;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <div id="header">
+        <nav id="head">
+            <a href="Main.html" id="logo"><img src="image/logo.png"></a>
+            <ul id="head-content" >
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="Charaters.html">Charaters</a></li>
+                <li><a href="Weapons.html">Weapons</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li><a href="#">Database</a>
+                    <ul id="Database-content">
+                        <li><a href="Artifacts.html">Artifacts</a></li>
+                        <li><a href="Element.html">Element</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div id="container">
+        <h1>Name: Raiden Shogun</h1>
+        <br>
+        <div id="info-head">
+            <div id="img-charater">
+                <img src="image/Raiden_Shogun_Card.jpg"> 
+            </div>
+            <div id="infor-charater">
+                <table style="width: 100%; height:100%; padding: 20px;">
+                    <tr>
+                        <td>Age/Birthday:</td>
+                        <td>June 26th</td>
+                    </tr>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td>Raiden Shogun/Baal</td>
+                    </tr>
+                    <tr>
+                        <td>Nation:</td>
+                        <td>Inazuma</td>
+                    </tr>
+                    <tr>
+                        <td>Sex:</td>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <td>Rarity:</td>
+                        <td><img src="image/Genshin_5_Stars.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Weapon:</td>
+                        <td>Polearm</td>
+                    </tr>
+                    <tr>
+                        <td>Element:</td>
+                        <td>Electro</td>
+                    </tr>
+                    <tr>
+                        <td>Constellation:</td>
+                        <td>Imperatrix Umbrosa</td>
+                    </tr>
+                    <tr>
+                        <td>Special Dish:</td>
+                        <td>–</td>
+                    </tr>
+                    <tr>
+                        <td>Release Date:</td>
+                        <td>Sep 1, 2021</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="infor-avai">
+            <div id="weapon">
+                <p style="color: #ffd780;">Raiden Best Weapons</p>
+                <br>
+                <a href="Engulfing.html"><p><img src="image/Engulfing_Lightning.png"> Thundering Pulse</p></a>
+            </div>
+            <div id="artifact">
+                <p style="color: #ffd780;">Raiden Best Artifacts</p>
+                <br>
+                <a href="Artifacts.html"><p><img src="image/emblem_of_severed_fate.png"> Emblem of Severed Fate</p></a>
+            </div>
+        </div>
+        <br>
+        <div id="stats">
+            <p style="color: #ffd780;">Raiden Best Stats</p>
+            <br>
+            <div id="infor">
+                <p>Sands: Energy Recharge / ATK%</p>
+                <p>Goblet: Electro DMG / ATK%</p>
+                <p>Circlet: CRIT Rate / CRIT DMG</p>
+            </div>
+            <br>
+            <div id="infor2">
+                <p><b>Substats</b>: CRIT Rate / CRIT DMG > ATK% > Energy Recharge</p>
+            </div>
+        </div>
+        <br>
+        <div id="talent">
+            <h2 style="color: aliceblue;">Raiden Talents</h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/Normal-zhong.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Normal Attack</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Origin</h3>
+                            <br>
+                            <p style="color: #ffd780;">Normal Attack</p>
+                            <br>
+                            <p>Performs up to 5 consecutive spear strikes</p>
+                            <br>
+                            <p style="color: #ffd780;">Charged Attack</p>
+                            <br>
+                            <p>Consumes a certain amount of Stamina to perform an upward slash</p>
+                            <br>
+                            <p style="color: #ffd780;">Plunging Attack</p>
+                            <br>
+                            <p>Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_2-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Elemental Skill</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Transcendence: Baleful Omen</h3>
+                            <br>
+                            <p>The Raiden Shogun unveils a shard of her Euthymia, dealing Electro DMG to nearby opponents, and granting nearby party members the Eye of Stormy Judgment.</p>
+                            <br>
+                            <p style="color: #ffd780;">Eye of Stormy Judgment</p>
+                            <br>
+                            <p>- When characters with this buff attack and deal DMG to opponents, the Eye will unleash a coordinated attack, dealing AoE Electro DMG at the opponent's position.</p><br>
+                            <p>- Characters who gain the Eye of Stormy Judgment will have their Elemental Burst DMG increased based on the Energy Cost of the Elemental Burst during the Eye's duration.</p><br>
+                            <p>The Eye can initiate one coordinated attack every 0.9s per party.</p><br>
+                            <p>Coordinated attacks generated by characters not controlled by you deal 20% of the normal DMG.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_3-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Elemental Burst</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Secret Art: Musou Shinsetsu</h3>
+                            <br>
+                            <p>Gathering truths unnumbered and wishes uncounted, the Raiden Shogun unleashes the Musou no Hitotachi and deals AoE Electro DMG, using Musou Isshin in combat for a certain duration afterward. The DMG dealt by Musou no Hitotachi and Musou Isshin's attacks will be increased based on the number of Chakra Desiderata's Resolve stacks consumed when this skill is used.</p>
+                            <br>
+                            <p style="color: #ffd780;">Musou Isshin</p>
+                            <br>
+                            <p>While in this state, the Raiden Shogun will wield her tachi in battle, while her Normal, Charged, and Plunging Attacks will be infused with Electro DMG, which cannot be overridden. When such attacks hit opponents, she will regenerate Energy for all nearby party members. Energy can be restored this way once every 1s, and this effect can be triggered 5 times throughout this skill's duration.</p>
+                            <br>
+                            <p>While in this state, the Raiden Shogun's resistance to interruption is increased, and she is immune to Electro-Charged reaction DMG.</p>
+                            <br>
+                            <p>While Musou Isshin is active, the Raiden Shogun's Normal, Charged, and Plunging Attack DMG will be considered Elemental Burst DMG.</p>
+                            <br>
+                            <p>The effects of Musou Isshin will be cleared when the Raiden Shogun leaves the field.</p>
+                            <br>
+                            <p style="color: #ffd780;">Chakra Desiderata</p>
+                            <br>
+                            <p>When nearby party members (excluding the Raiden Shogun herself) use their Elemental Bursts, the Raiden Shogun will build up Resolve stacks based on the Energy Cost of these Elemental Bursts.
+                                The maximum number of Resolve stacks is 60. The Resolve gained by Chakra Desiderata will be cleared 300s after the Raiden Shogun leaves the field.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Passives">
+            <h2 style="color: aliceblue;">Raiden Passives </h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_4-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Ascension 1</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Wishes Unnumbered</h3>
+                            <br>
+                            <p>When nearby party members gain Elemental Orbs or Particles, Chakra Desiderata gains 2 Resolve stacks.</p>
+                            <br>
+                            <p>This effect can occur once every 3s.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_5-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Ascension 4</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Enlightened One</h3>
+                            <br>
+                            <p>Each 1% above 100% Energy Recharge that the Raiden Shogun possesses grants her:</p>
+                            <br>
+                            <p>- 0.6% greater Energy restoration from Musou Isshin</p>
+                            <br>
+                            <p>- 0.4% Electro DMG Bonus</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_6-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Passive</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">All-Preserver</h3>
+                            <br>
+                            <p>Mora expended when ascending Swords and Polearms is decreased by 50%.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Constellations">
+            <h2 style="color: aliceblue;">Raiden Constellations</h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_1-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 1</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Ominous Inscription</h3>
+                            <br>
+                            <p>Increases the maximum number of Stone Steles created by Dominus Lapidis that may exist simultaneously to 2.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_2-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 2</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Steelbreaker</h3>
+                            <br>
+                            <p>Secret Art: Musou Shinsetsu's Musou no Hitotachi and Musou Isshin attacks will ignore 60% of opponents' DEF.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_3-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 3</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Shinkage Bygones</h3>
+                            <br>
+                            <p>Increases the Level of Secret Art: Musou Shinsetsu by 3.</p>
+                            <br>
+                            <p>Maximum upgrade level is 15.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_4-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 4</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Pledge of Propriety</h3>
+                            <br>
+                            <p>When the Musou Isshin state applied by Secret Art: Musou Shinsetsu expires, all nearby party members (excluding the Raiden Shogun) gain 30% bonus ATK for 10s.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_5-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 5</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Shogun's Descent</h3>
+                            <br>
+                            <p>Increase the Level of Transcendence: Baleful Omen by 3.</p>
+                            <br>
+                            <p>Maximum upgrade level is 15.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_6-raiden.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 6</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Wishbearer</h3>
+                            <br>
+                            <p>While in the Musou Isshin state applied by Secret Art: Musou Shinsetsu, the Raiden Shogun's Normal, Charged, and Plunging Attacks will decrease all nearby party members' (but not including the Raiden Shogun herself) Elemental Burst CD by 1s when they hit opponents.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Showcase">
+            <h2 style="color: aliceblue;">Raiden Showcase</h2>
+            <br>
+            <div class="Normal">
+                <p>Raiden video guide by <a href="https://www.youtube.com/Braxophone"  style="color: aqua;">Braxophone. Check out his content!</a></p><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BYBKAZ-VjDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">          
+            <div id="logo">           
+                <a href="Main.html"><img src="image/logo.png"></a><br> <p>TheHoc.com is not affiliated with or endorsed by miHoYo. <br>
+                    TheHoc.com is a Database and Tier List website for</p>
+                    <br>
+                    <p class="footer-copyright">© TheHoc.com 2023</p>
+            </div>       
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

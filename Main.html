@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fe26a5543.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>TheHoc</title>
+</head>
+<style>
+#Main-img img{
+    width: 100%;
+    height:auto;
+}
+#Main{
+    position: relative;
+    background-color: #113f60;
+    max-width: 1260px;
+    height: auto;
+    margin: 0px auto;  
+}
+#Main p{
+    font-size: 35px;
+    font-family: 'Caveat';
+    text-align: center;
+    color:antiquewhite
+}
+#Main-card{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+#charaters{
+    background-color: #325874;
+    box-shadow: 0px 8px 16px 0px #000000;
+    width: 600px;
+    height: 280px;
+    justify-content: center;
+}
+#Main  a{
+    text-decoration: none;
+    color: rgb(215, 182, 182);
+    transition: color 0.4s ease;
+}
+#Main a:hover{
+    color: red;
+}
+#weapons{
+    position: absolute;
+    background-color: #325874;
+    box-shadow: 0px 8px 16px 0px #000000;
+    width: 600px;
+    height: 280px;
+    justify-content: center;
+    right: 0;
+    top:0;
+}
+#teams{
+    position: absolute;
+    background-color: #325874;
+    box-shadow: 0px 8px 16px 0px #000000;
+    width: 600px;
+    height: 280px;
+    justify-content: center;
+    right: 25%;
+    top:330px;
+}
+#footer {
+    position:relative;
+    width: 100%;
+    background-color: #4f7ea0;
+    height:auto;
+    padding:5px;
+    bottom: 0;
+    justify-content: center;
+    justify-content: space-between; 
+}
+</style>
+<body>
+    <div id="header">
+        <nav id="head">
+            <a href="Main.html" id="logo"><img src="image/logo.png"></a>
+            <ul id="head-content" >
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="Charaters.html">Charaters</a></li>
+                <li><a href="Weapons.html">Weapons</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li><a href="#">Database</a>
+                    <ul id="Database-content">
+                        <li><a href="Artifacts.html">Artifacts</a></li>
+                        <li><a href="Element.html">Element</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="Main-img">
+        <img src="image/background-header.png">
+    </div>
+    <div id="Main">
+        <div>
+            <p>
+                Here, you can find details about the character's backstory, personality, and abilities. Some character pages may also include tips on how to effectively use them in combat or team compositions that work well with the character's abilities.
+            </p>
+            <br>
+            <p>
+                Having access to information about the characters can be a valuable resource for new players who want to learn more about the game's world and mechanics. By understanding the strengths and weaknesses of each character, players can make more informed decisions when building their teams and progressing through the game.
+            </p>
+        </div>
+        <br>
+        <div id="Main-card">
+            <div id="charaters">
+                <p><a href="Charaters.html"> <img src="image/charater.png"></a> <br> How to build charaters?   <a href="Charater.html"> Learn more</a></p>            
+            </div>    
+            <div id="weapons">
+                <p><a href="Weapons.html"> <img src="image/weapons.png"></a> <br>
+                    All weapon for you <a href="Weapons.html">Here</a></p>
+            </div> 
+            <div id="teams">
+                <p><a href="Teams.html"><img src="image/Team.png"></a> <br> The best team, you should build <a href="Team.html">Learn more</a> </p>
+            </div>
+        </div>          
+    </div>
+    <br>
+    <footer>
+        <div id="footer">          
+            <div id="logo">           
+                <a href="Main.html"><img src="image/logo.png"></a><br> <p>TheHoc.com is not affiliated with or endorsed by miHoYo. <br>
+                    TheHoc.com is a Database and Tier List website for</p>
+                    <br>
+                    <p class="footer-copyright">© TheHoc.com 2023</p>
+             </div>       
+             <div class="contact">
+                <h3>Contact Us</h3>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

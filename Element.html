@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fe26a5543.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>TheHoc</title>
+</head>
+<style>
+#container{
+    position: relative;
+    margin: 0px auto;
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    background: #1c1f46;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+#container h1{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#container p{
+    color: aliceblue;
+}
+#footer {
+    position:relative;
+    width: 100%;
+    background-color: #4f7ea0;
+    height:auto;
+    padding:5px;
+    bottom: 0;
+    justify-content: center;
+    justify-content: space-between; 
+}
+.inside table tr {
+    color: aliceblue;
+   
+}
+.inside th {
+    color: aliceblue; 
+    font-family: Patua One;
+    font-size: 25px
+    
+}
+.inside table{
+    padding: 5px 5px;
+    border-spacing: 1px 30px; 
+    background-color: rgb(89, 83, 186);
+    border-radius: 10px;
+}
+.inside p{
+   font-family: none;
+   font-size: 18px;
+}
+tr {
+    border-bottom: 1pt solid rgb(74, 68, 164);
+}
+</style>
+<body>
+    <div id="header">
+        <nav id="head">
+            <a href="Main.html" id="logo"><img src="image/logo.png"></a>
+            <ul id="head-content" >
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="Charaters.html">Charaters</a></li>
+                <li><a href="Weapons.html">Weapons</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li><a href="#">Database</a>
+                    <ul id="Database-content">
+                        <li><a href="Artifacts.html">Artifacts</a></li>
+                        <li><a href="Element.html">Element</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <div  id="container">
+        <h1>Genshin Impact Elemental Reactions & Resonance</h1>
+        <br>
+        <br>
+        <h2>Elemental Debuffs</h2>
+        <br>
+        <p>Each element in Genshin Impact has a different negative effect on your enemies.</p>
+        <br>
+        <div class="inside">
+            <table style="width: 100%;">
+                <tr style="background-color: rgb(60, 54, 139);">
+                    <th style="width: 30%;">Name</th>
+                    <th style="width: 20%;">Element</th>
+                    <th>Effect</th>
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Condensed Ice</th>
+                    <th><img src="image/element_cryo.png"></th>
+                    <td>Increases stamina consumption.</td>
+                    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Slowing Water</th>
+                    <th><img src="image/element_hydro.png"></th>
+                    <td>Increases skill CD durations.</td>
+                    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Smoldering Flames</th>
+                    <th><img src="image/element_pyro.png"></th>
+                    <td>Continuously inflicts damage over time.</td>
+                    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Engulfing Storm</th>
+                    <th><img src="image/element_electro.png"></th>
+                    <td>Continuously drains Energy Recharge.</td>
+                    
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h2>Elemental Reactions</h2>
+        <br>
+        <p>Combining different elements in combat is the key to success in Genshin Impact.</p>
+        <br>
+        <div class="inside">
+            <table style="width: 100%;">
+                <tr style="background-color: rgb(60, 54, 139);">
+                    <th style="width: 25%;">Name</th>
+                    <th style="width: 30%;">Element</th>
+                    <th>Effect</th>
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Crystalize</th>
+                    <th><img src="image/Element_Geo.png">+<img src="image/element_cryo.png"><img src="image/element_electro.png"><img src="image/element_hydro.png"><img src="image/element_pyro.png"></th>
+                    <td>Creates a crystal that will provide a shield when picked up.</td>                   
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Swirl</th>
+                    <th><img src="image/element_anemo.png">+<img src="image/element_cryo.png"><img src="image/element_electro.png"><img src="image/element_hydro.png"><img src="image/element_pyro.png"></th>
+                    <td>Deals extra elemental damage and spreads the effect.</td>                   
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Electro-Charged</th>
+                    <th><img src="image/element_electro.png">+<img src="image/element_hydro.png"></th>
+                    <td>Deals Electro DMG over time.</td>                 
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Overloaded</th>
+                    <th><img src="image/element_electro.png">+<img src="image/element_pyro.png"></th>
+                    <td>Deals AoE Pyro DMG.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Frozen</th>
+                    <th><img src="image/element_cryo.png">+<img src="image/element_hydro.png"></th>
+                    <td>Freezes the target.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Melt</th>
+                    <th><img src="image/element_cryo.png">+<img src="image/element_pyro.png"></th>
+                    <td>Deals extra damage.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Superconduct</th>
+                    <th><img src="image/element_cryo.png">+<img src="image/element_electro.png"></th>
+                    <td>Deals AoE Cryo DMG and reduces the target's Physical RES by 50%.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Vaporize</th>
+                    <th><img src="image/element_hydro.png">+<img src="image/element_pyro.png"></th>
+                    <td>Deals extra damage.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Burning</th>
+                    <th><img src="image/element_dendro.png">+<img src="image/element_pyro.png"></th>
+                    <td>Deals AoE Pyro DoT and applies Pyro.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Bloom</th>
+                    <th><img src="image/element_dendro.png">+<img src="image/element_hydro.png"></th>
+                    <td>Creates a Dendro Core that explodes after 6 seconds, dealing AoE Dendro DMG.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Hyperbloom</th>
+                    <th><img src="image/element_dendro.png">+<img src="image/element_hydro.png"><img src="image/element_electro.png"></th>
+                    <td>Triggered when applying Electro to a Dendro Core. Transforms the Dendro Core into a homing Sprawling Shot that deals increased AoE Dendro DMG in a much smaller AoE.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Burgeon</th>
+                    <th><img src="image/element_dendro.png">+<img src="image/element_hydro.png"><img src="image/element_pyro.png"></th>
+                    <td>Triggered when applying Pyro to a Dendro Core. Detonates the Dendro Core immediately, dealing increased AoE Dendro DMG.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Quicken</th>
+                    <th><img src="image/element_dendro.png">+<img src="image/element_electro.png"></th>
+                    <td>Applies a Quicken aura.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Aggravate</th>
+                    <th><img src="image/element_dendro.png">+<img src="image/element_electro.png"><img src="image/element_electro.png"></th>
+                    <td>Triggered when applying Electro to an entity with the Quicken aura. Adds Flat DMG Bonus to the attack that triggers this reaction.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Spread</th>
+                    <th><img src="image/element_dendro.png">+<img src="image/element_electro.png"><img src="image/element_dendro.png"></th>
+                    <td>Triggered when applying Dendro to an entity with the Quicken aura. Adds Flat DMG Bonus to the attack that triggers this reaction.</td>    
+                </tr>
+            </table>
+        </div>
+        <br>
+        <h2>Elemental Resonance</h2>
+        <br>
+        <p>When you have a full party, you will receive effects that correspond to the Elemental Types present in the party.</p>
+        <br>
+        <div class="inside">
+            <table style="width: 100%;">
+                <tr style="background-color: rgb(60, 54, 139);">
+                    <th style="width: 25%;">Name</th>
+                    <th style="width: 30%;">Requirement</th>
+                    <th>Effect</th>
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Enduring Rock</th>
+                    <th><img src="image/Element_Geo.png"><img src="image/Element_Geo.png"></th>
+                    <td>Increases shield strength by 15%. Additionally, characters protected by a shield will have the following special characteristics: DMG dealt increased by 15%, dealing DMG to enemies will decrease their Geo RES by 20% for 15s.</td>                   
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Fervent Flames</th>
+                    <th><img src="image/element_cryo.png"><img src="image/element_pyro.png"></th>
+                    <td>Affected by Cryo for 40% less time. Increases ATK by 25%.</td>                   
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Soothing Waters</th>
+                    <th><img src="image/element_hydro.png"><img src="image/element_hydro.png"></th>
+                    <td>Affected by Pyro for 40% less time. Increases incoming healing by 30%.</td>                 
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Impetuous Winds</th>
+                    <th><img src="image/element_anemo.png"><img src="image/element_anemo.png"></th>
+                    <td>Decreases Stamina Consumption by 15%. Increases Movement SPD by 10%. Shortens Skill CD by 5%.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">High Voltage</th>
+                    <th><img src="image/element_electro.png"><img src="image/element_electro.png"></th>
+                    <td>Affected by Hydro for 40% less time. Superconduct, Overloaded, and Electro-Charged have a 100% chance to generate an Electro Elemental Particle (CD: 5s).</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Shattering Ice</th>
+                    <th><img src="image/element_cryo.png"><img src="image/element_cryo.png"></th>
+                    <td>Affected by Electro for 40% less time. Increases CRIT Rate against enemies that are Frozen or affected by Cryo by 15%.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Sprawling Greenery</th>
+                    <th><img src="image/element_dendro.png"><img src="image/element_dendro.png"></th>
+                    <td>After triggering Burning, Quicken, or Bloom reactions, all nearby party members gain 30 Elemental Mastery for 6s. After triggering Aggravate, Spread, Hyperbloom, or Burgeon reactions, all nearby party members gain 20 Elemental Mastery for 6s. The durations of the aforementioned effects will be counted independently.</td>    
+                </tr>
+                <tr>
+                    <th style="font-size: 18px;">Protective Canopy</th>
+                    <th style="font-size: 15px; font-family: none;">Any 4 Unique Elements</th>
+                    <td>All Elemental RES +15%, Physical RES +15%.</td>    
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">          
+            <div id="logo">           
+                <a href="Main.html"><img src="image/logo.png"></a><br> <p>TheHoc.com is not affiliated with or endorsed by miHoYo. <br>
+                    TheHoc.com is a Database and Tier List website for</p>
+                    <br>
+                    <p class="footer-copyright">© TheHoc.com 2023</p>
+             </div>       
+             <div class="contact">
+                <h3>Contact Us</h3>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

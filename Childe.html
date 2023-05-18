@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6fe26a5543.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <title>TheHoc</title>
+</head>
+<style>
+#container{
+    position: relative;
+    margin: 0px auto;
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    background: #1c1f46;
+    border-radius: 4px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+#container h1{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer {
+    position:relative;
+    width: 100%;
+    background-color: #4f7ea0;
+    height:auto;
+    padding:5px;
+    bottom: 0;
+    justify-content: center;
+    justify-content: space-between; 
+}
+#info-head{
+    display: flex;
+    justify-content: space-between;
+}
+#img-charater{
+    position: relative;
+    box-sizing: border-box;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    align-content: center;
+    border-radius: 20px;
+    background-color: #303b7a;
+}
+#img-charater img{
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+#img-charater img:hover{
+    transform: scale(1.025);
+}
+#infor-charater{
+    box-sizing: border-box;
+    width: 49%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a;
+}
+#infor-charater table tr td{
+    font-size: 25px;
+    color:aliceblue;
+}
+.infor-avai{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+#weapon a p{
+    position: relative;
+    color: black;
+    border-radius: 5px;
+    background-color: #4f5496; 
+    width: 250%;
+    display: flex;
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+a {
+    text-decoration: none;
+}
+#artifact a p{ 
+    color: black;
+    border-radius: 5px;
+    background-color: #4f5496; 
+    width: 200%;
+    display: flex;
+    color: aliceblue;
+}
+#artifact{
+    position: absolute;
+    left: 50%;
+}
+#stats{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+#infor {
+    display: flex;
+    justify-content: space-between;
+}
+#infor p{
+    display: block;
+    background-color: #4f5496;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    text-align:center;
+}
+#infor2 {
+    display: block;
+    background-color: #4f5496;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    text-align:center;
+}
+.Normal{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #303b7a; 
+}
+.Normal table tr td{
+    padding: 30px;
+    
+} 
+.Normal iframe{
+    width: 100%;
+    height: 520px;
+    border-radius: 5px;
+}
+</style>
+<body>
+    <div id="header">
+        <nav id="head">
+            <a href="Main.html" id="logo"><img src="image/logo.png"></a>
+            <ul id="head-content" >
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="Charaters.html">Charaters</a></li>
+                <li><a href="Weapons.html">Weapons</a></li>
+                <li><a href="Teams.html">Teams</a></li>
+                <li><a href="#">Database</a>
+                    <ul id="Database-content">
+                        <li><a href="Artifacts.html">Artifacts</a></li>
+                        <li><a href="Element.html">Element</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <div id="container">
+        <h1>Name: Childe(Tartaglia)</h1>
+        <br>
+        <div id="info-head">
+            <div id="img-charater">
+                <img src="image/Tartaglia_Card.jpg">
+            </div>
+            <div id="infor-charater">
+                <table style="width: 100%; height:100%; padding: 20px;">
+                    <tr>
+                        <td>Age/Birthday:</td>
+                        <td>July 20th</td>
+                    </tr>
+                    <tr>
+                        <td>Full Name:</td>
+                        <td>Ajax</td>
+                    </tr>
+                    <tr>
+                        <td>Nation:</td>
+                        <td>Snezhnaya</td>
+                    </tr>
+                    <tr>
+                        <td>Sex:</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Rarity:</td>
+                        <td><img src="image/Genshin_5_Stars.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Weapon:</td>
+                        <td>Bow</td>
+                    </tr>
+                    <tr>
+                        <td>Element:</td>
+                        <td>Hydro</td>
+                    </tr>
+                    <tr>
+                        <td>Constellation:</td>
+                        <td>Monoceros Caeli</td>
+                    </tr>
+                    <tr>
+                        <td>Special Dish:</td>
+                        <td>A Prize Catch</td>
+                    </tr>
+                    <tr>
+                        <td>Release Date:</td>
+                        <td>Nov 11, 2020</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="infor-avai">
+            <div id="weapon">
+                <p style="color: #ffd780;">Childe Best Weapons</p>
+                <br>
+                <a href="Thundering.html"><p><img src="image/Thundering Pulse.png"> &nbsp; Thundering Pulse</p></a>
+            </div>
+            <div id="artifact">
+                <p style="color: #ffd780;">Childe Best Artifacts</p>
+                <br>
+                <a href="Artifacts.html"><p><img src="image/heart_of_depth.png"> &nbsp; heart of depth</p></a>
+            </div>
+        </div>
+        <br>
+        <div id="stats">
+            <p style="color: #ffd780;">Childe Best Stats</p>
+            <br>
+            <div id="infor">
+                <p>Sands: ATK%</p>
+                <p>Goblet: Hydro DMG</p>
+                <p>Circlet: CRIT Rate / CRIT DMG</p>
+            </div>
+            <br>
+            <div id="infor2">
+                <p><b>Substats</b>: CRIT Rate / CRIT DMG > ATK% > Energy Recharge</p>
+            </div>
+        </div>
+        <br>
+        <div id="talent">
+            <h2 style="color: aliceblue;">Childe Talents</h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/UI_GachaTypeIcon_Bow-Childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Normal Attack</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Cutting Torrent</h3>
+                            <br>
+                            <p style="color: #ffd780;">Normal Attack</p>
+                            <br>
+                            <p>Performs up to 6 consecutive shots with a bow.</p>
+                            <br>
+                            <p style="color: #ffd780;">Charged Attack</p>
+                            <br>
+                            <p>Perform a more precise Aimed Shot with increased DMG.</p>
+                            <br>
+                            <p>While aiming, the power of Hydro will accumulate on the arrowhead. An arrow fully charged with the torrent will deal Hydro DMG and apply Riptide status.</p>
+                            <br>
+                            <p style="color: #ffd780;">Riptide</p>
+                            <br>
+                            <p>Opponents affected by Riptide will suffer from AoE Hydro DMG effects when attacked by Tartaglia in various ways. DMG dealt in this way is considered Normal Attack DMG.</p>
+                            <br>
+                            <p>- Riptide Flash: A fully-charged Aimed Shot that hits an opponent affected by Riptide deals consecutive bouts of AoE DMG. Can occur once every 0.7s.</p>
+                            <br>
+                            <p>- Riptide Burst: Defeating an opponent affected by Riptide created a Hydro burst that inflicts the Riptide status on nearby opponents hit.</p>
+                            <p style="color: #ffd780;">Plunging Attack</p>
+                            <br>
+                            <p>Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact. When Tartaglia is in Foul Legacy: Raging Tide's Melee Stance, he cannot perform a plunging attack.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_2-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Elemental Skill</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Foul Legacy: Raging Tide</h3>
+                            <br>
+                            <p>Unleashes a set of weaponry made of pure water, dealing Hydro DMG to surrounding opponents and entering a Melee Stance.</p>
+                            <br>
+                            <p>In this Stance, Tartaglia's Normal and Charged Attacks change as follows:</p>
+                            <br>
+                            <p style="color: #ffd780;">Normal Attack</p>
+                            <br>
+                            <p>Consumes a certain amount of Stamina to unleash a cross slash, dealing Hydro DMG.</p>
+                            <br>
+                            <p style="color: #ffd780;">Riptide Slash</p>
+                            <br>
+                            <p>Hitting an opponent affected by Riptide with a melee attack unleashes a Riptide Slash that deals AoE Hydro DMG. DMG dealt in this way is considered Elemental Skill DMG, and can only occur once every 1.5s.</p>
+                            <br>
+                            <p>After 30s, or when the ability is unleashed again, this skill will end. Tartaglia will return to his Ranged Stance and this ability will enter CD. The longer Tartaglia stays in his Melee Stance, the longer the CD.</p>
+                            <br>
+                            <p>If the return to a ranged stance occurs automatically after 30s, the CD is even longer.</p>                           
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_3-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Elemental Burst</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Havoc: Obliteration</h3>
+                            <br>
+                            <p>Performs different attacks based on what stance Tartaglia is in when casting.</p>
+                            <br>
+                            <p style="color: #ffd780;">Ranged Stance: Flash of Havoc</p>
+                            <br>
+                            <p>Swiftly fires a Hydro-imbued magic arrow, dealing AoE Hydro DMG and applying the Riptide status.
+                                Returns a portion of its Energy Cost after use.</p>
+                            <br>
+                            <p style="color: #ffd780;">Melee Stance: Light Obliteration</p>
+                            <br>
+                            <p>Performs a slash with a large AoE, dealing massive Hydro DMG to all surrounding opponents, which triggers Riptide Blast.</p>
+                            <br>
+                            <p style="color: #ffd780;">Riptide Blast</p>
+                            <br>
+                            <p>When the obliterating waters hit an opponent affected by Riptide, it clears their Riptide status and triggers a Hydro Explosion that deals AoE Hydro DMG.</p>
+                            <br>
+                            <p>DMG dealt in this way is considered Elemental Burst DMG.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Passives">
+            <h2 style="color: aliceblue;">Childe Passives </h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_4-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Ascension 1</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Never Ending</h3>
+                            <br>
+                            <p>Extends Riptide duration by 8s.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_5-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Ascension 4</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Sword of Torrents</h3>
+                            <br>
+                            <p>When Tartaglia is in Foul Legacy: Raging Tide's Melee Stance, or if his Normal and Charged Attacks do CRIT DMG, they will apply the Riptide status effect on the hit enemy.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/talent_6-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Passive</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Master of Weaponry</h3>
+                            <br>
+                            <p>Increases your own party member's Normal Attack Level by 1.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Constellations">
+            <h2 style="color: aliceblue;">Childe Constellations</h2>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_1-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 1</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Foul Legacy: Tide Withholder</h3>
+                            <br>
+                            <p>Decreases the CD of Foul Legacy: Raging Tide by 20%.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_2-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 2</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Foul Legacy: Understream</h3>
+                            <br>
+                            <p>When opponents affected by Riptide are defeated, Tartaglia regenerates 4 Elemental Energy.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_3-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 3</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Abyssal Mayhem: Vortex of Turmoil</h3>
+                            <br>
+                            <p>Increases the Level of Foul Legacy: Raging Tide by 3.</p>
+                            <br>
+                            <p>Maximum upgrade level is 15.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_4-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 4</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Abyssal Mayhem: Hydrosprout</h3>
+                            <br>
+                            <p>If Tartaglia is in Foul Legacy: Raging Tide's Melee Stance, triggers Riptide Slash against opponents on the field affected by Riptide every 4s, otherwise, triggers Riptide Flash.</p>
+                            <br>
+                            <p>
+                                Riptide Slashes and Riptide Flashes triggered by this Constellation effect are not subject to the time intervals that would typically apply to these two Riptide effects, nor do they have any effect on those time intervals.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_5-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 5</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Havoc: Formless Blade</h3>
+                            <br>
+                            <p>Increase the Level of Havoc: Obliteration by 3.</p>
+                            <br>
+                            <p>Maximum upgrade level is 15.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="Normal">
+                <table>
+                    <tr>
+                        <td><img src="image/constellation_6-childe.png"> <h3 style="color: #9ca2da; font-size: 16px; text-align: center;">Constellation 6</h3></td>
+                        <td>
+                            <h3 style="color: aliceblue;">Havoc: Annihilation</h3>
+                            <br>
+                            <p>When Havoc: Obliteration is cast in Melee Stance, the CD of Foul Legacy: Raging Tide is reset.
+                                This effect will only take place once Tartaglia returns to his Ranged Stance.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div id="Showcase">
+            <h2 style="color: aliceblue;">Childe Showcase</h2>
+            <br>
+            <div class="Normal">
+                <p>Childe video guide by <a href="https://www.youtube.com/@Zy0x"  style="color: aqua;">Zy0x. Check out his content!</a></p><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/esQi-FO4S7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">          
+            <div id="logo">           
+                <a href="Main.html"><img src="image/logo.png"></a><br> <p>TheHoc.com is not affiliated with or endorsed by miHoYo. <br>
+                    TheHoc.com is a Database and Tier List website for</p>
+                    <br>
+                    <p class="footer-copyright">© TheHoc.com 2023</p>
+            </div>       
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
